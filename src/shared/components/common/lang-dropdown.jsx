@@ -33,7 +33,7 @@ export default function LangDropdown({iconDropdown = "/images/ic_dropdown.png"})
         </button>
       </div>
       <div
-        className={`absolute top-[80px] sm:top-[100%] left-0 sm:right-0 w-[156px] p-2 !capitalize text-[10px] rounded-lg bg-white z-20 ${
+        className={`absolute top-[80px] sm:top-[100%] left-0 sm:left-auto sm:right-0 w-[156px] p-2 !capitalize text-[10px] rounded-lg bg-white z-20 ${
           showDropdown ? "block" : "hidden"
         } text-black`}
       >
