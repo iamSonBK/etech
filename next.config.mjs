@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin("./i18n.config.js");
 const nextConfig = {
   i18n: {
     locales: ['en', 'vi'],
-    defaultLocale: 'en',
+    defaultLocale: 'vi',
     localeDetection: true
   }
 };

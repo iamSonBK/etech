@@ -67,7 +67,7 @@ export default function Footer() {
                   <input
                     type="email"
                     placeholder={t("form.email.placeholder")}
-                    className="py-[18px] text-gray-dark text-sm w-full outline-0 shadow-none"
+                    className="py-[18px] text-white text-sm w-full outline-0 shadow-none"
                   />
                   <button>
                     <img src="/images/ic_arrow_right_white.png" alt="arrow_right" />

@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import Title from '../common/title';
 
 export default function AboutUs() {
     const t = useTranslations();
@@ -25,7 +26,7 @@ export default function AboutUs() {
         <div className='sm:max-w-[calc(100%_-_760px)] mx-auto mt-12 sm:mt-32 mb-32'>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-10'>
                 <div className='flex flex-col px-4 sm:px-0 '>
-                    <h2 className='text-black text-[40px] sm:text-6xl font-black mb-4 sm:mb-10'>{t("about_us.title")}</h2>
+                    <Title title={t("about_us.title")} className='text-left'/>
                     <p className='text-gray2 font-mont text-sm font-normal mb-[39px] sm:mb-[60px]'>{t("about_us.description")}</p>
                     <div className='grid grid-cols-2 gap-10'>
                         <div className='font-mont mb-[39px]'>

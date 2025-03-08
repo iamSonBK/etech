@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Title from "../common/title";
 
 export default function OurGames() {
   const t = useTranslations();
@@ -79,9 +80,7 @@ export default function OurGames() {
   return (
     <div className="mb-24 sm:mb-[246px]">
       <div className="container mx-auto">
-        <h2 className="text-6xl font-black text-center mb-6">
-          {t("our_games.title")}
-        </h2>
+        <Title title={t("our_games.title")} />
         <p className="text-sm text-center mb-[80px] text-gray2 whitespace-pre-line font-mont">
           {t("our_games.description")}
         </p>

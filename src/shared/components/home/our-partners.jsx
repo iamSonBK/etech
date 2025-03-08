@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Slider from "react-slick";
+import Title from "../common/title";
 
 export default function OurPartners() {
     const t = useTranslations();
@@ -38,9 +39,7 @@ export default function OurPartners() {
   return (
     <div className="bg-[#F6F6F6] py-10 sm:py-[120px]">
         <div className="sm:max-w-[calc(100%_-_460px)] mx-auto">
-            <h2 className="text-[40px] sm:text-6xl font-black text-center mb-6">
-                {t("our_partners")}
-            </h2>
+            <Title title={t("our_partners")} />
             <Slider {...settings} className="mt-20">
                 {items.map((item, index) => (
                     <div key={index}>
