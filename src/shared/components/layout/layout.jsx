@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <>
+    <main className="overflow-x-hidden">
       <Header />
       {children}
       <button
@@ -40,6 +40,6 @@ export default function Layout({ children }) {
         <img src="/images/ic_arrow-circle-up.png" alt="arrow_up" />
       </button>
       <Footer />
-    </>
+    </main>
   );
 }

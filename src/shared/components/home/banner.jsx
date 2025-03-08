@@ -25,7 +25,7 @@ export default function Banner() {
     }, [])
   return (
     <div
-      className="relative max-h-[1018px] bg-[url('/images/banner_sp.png')] sm:bg-[url('/images/banner_pc.png')] bg-cover sm:bg-contain"
+      className="relative min-h-[854px] max-h-[1018px] bg-[url('/images/banner_sp.png')] sm:bg-[url('/images/banner_pc.png')] bg-cover sm:bg-contain"
       style={{
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
@@ -34,7 +34,7 @@ export default function Banner() {
       }}
     >
         <div className="flex flex-col items-center justify-center h-full max-h-[650px] sm:max-h-[1018px]">
-            <h3 className='text-white text-[40px] sm:text-[80px] font-black mb-[21px] text-center px-12 sm:px-0'>{t("banner.we_re_getting_ready")}</h3>
+            <h3 className='text-white text-[40px] sm:text-[80px] font-black mb-[21px] mt-10 sm:mt-0 text-center px-12 sm:px-0'>{t("banner.we_re_getting_ready")}</h3>
             <div className='container sm:!max-w-[756px] bg-white rounded-[21px] flex items-center justify-between text-4xl sm:text-6xl sm:gap-14 px-[39px] py-[26px] drop-shadow-[0_4px_10px_hsla(0,0%,0%,0.25)] tabular-nums mb-10 sm:mb-[97px]'>
                 <p className='flex flex-col items-center justify-center gap-3'>
                     <span className='font-black'>{days}</span>

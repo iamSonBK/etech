@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta name="description" content="Front-end test" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link
           rel="stylesheet"
           type="text/css"

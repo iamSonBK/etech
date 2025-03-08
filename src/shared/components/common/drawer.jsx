@@ -7,7 +7,7 @@ export default function Drawer({show, onClose}) {
         <div className={`fixed top-0 left-0 w-full h-full z-10 bg-white bg-opacity-50 block transition-all duration-300 ${show ? 'translate-x-[0%]' : 'translate-x-[100%]'}`}>
             <div className="px-4">
                 <div className="flex justify-between py-6">
-                    <div className="bg-[#F6F6F6] border border-[#AFAFAF] rounded-lg w-[100px] flex items-center justify-center">
+                    <div className="bg-[#F6F6F6] border border-[#AFAFAF] rounded-lg w-[100px] flex items-center justify-center py-1">
                         <LangDropdown iconDropdown="/images/ic_dropdown_black.png" />
                     </div>
                     <button onClick={onClose} className="w-[30px] h-[30px]">
