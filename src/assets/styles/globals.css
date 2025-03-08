@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-black: #000000;
+  --color-blue: #079BEE;
+  --color-gray-light: #EEEEEE;
+  --color-gray: #C4C4C4;
+  --color-gray2: #757575,
+  --color-gray-dark: #545454;
+}
+@theme {
+  --font-mont: "Montserrat", sans-serif;
+  --font-playfair: "Playfair Display", sans-serif;
+  /* --animate-fly: fly 1s ease-in-out infinite; */
+/* 
+  @keyframes fly {
+    "0%, 100%": { transform: "translateY(20px)" },
+    "50%": { transform: "translateY(-20px)" }
+  } */
+}
+
+body {
+   font-family: "Playfair Display", sans-serif;
+}
+.container {
+  max-width:  calc(100% - 160px);
+}
+.slick-next, .slick-prev {
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+}
+.slick-next:before, .slick-prev:before {
+  content: none;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev {
+  left: 0;
+}
+.animate-fly {
+  animation: fly 2s ease-in-out 0s infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 576px) { 
+  .container {
+    max-width:  calc(100% - 32px);
+  }
+ }
+ 
