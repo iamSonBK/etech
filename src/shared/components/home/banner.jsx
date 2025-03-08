@@ -26,11 +26,10 @@ export default function Banner() {
   return (
     <div>
         <div
-        className="relative h-[75vh] sm:h-[100vh] max-h-[1018px] bg-[url('/images/banner_sp.png')] sm:bg-[url('/images/banner_pc.png')] bg-cover sm:bg-contain"
+        className="relative h-[100vh] max-h-[608px] sm:max-h-[1018px] bg-[url('/images/banner_sp.png')] sm:bg-[url('/images/banner_pc.png')] bg-cover sm:bg-cover bg-bottom"
         style={{
-            backgroundPosition: "top",
             backgroundRepeat: "no-repeat",
-            width: "100vw",
+            width: "100%",
         }}
         >
             <div className="flex flex-col items-center justify-center h-full max-h-[650px] sm:max-h-[1018px]">
